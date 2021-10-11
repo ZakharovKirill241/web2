@@ -1,0 +1,179 @@
+<html lang="ru">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Задание 2</title>
+			<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+				<div id="header">
+					<img id="logo" src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/28dc9498513525.5ede2fec2a76f.jpg"  alt="">
+					<div id = "main_head"><h1>Задача 2</h1></div>
+				</div>
+				
+					<nav id="nav">
+						<ul>
+							<li><a href="#">Главная</a></li>
+							<li><a href="#tabel">Таблица</a></li>
+							<li><a href="#form">Форма</a></li>
+						</ul>
+					</nav>
+			
+				<div id = "main">
+				<h2 id="class_head">Нумерованный список</h2>
+				<ol>
+					<li><a href="http://example.com/">Example(http)</a></li>
+					<li><a href="https://example.com/">Example(https)</a></li>
+					<li><a href="ftp://exaple.com/myfile.zip">FTP без авторизации</a></li>
+					<li><a href="ftp://users:password@exaple.com/myfile.zip">FTP с авторизацией</a></li>
+					<li><a href="http://example.com/#anchor">Ссылка на фрагмент страницы некоторого сайта</a></li>
+					<li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+					<li><a href="http://example.com?parameter1=p1&parameter2=p2">Ссылка с двумя параметрами в URL</a></li>
+					<li>
+						Список ссылок основной навигации сайта с подписями title
+						<ul>
+							<li><a href="#main" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+							<li><a href="#head2" title="Форма">Форма</a></li>
+						</ul>
+					</li>
+					<li><a>Ссылка без href</a></li>
+					<li><a href="">Пустой href</a></li>
+					<li><a href="http://example.com/" rel="nofollow">ссылка по которой запрещен переход поисковикам</a></li>
+					<li><noindex><a href="http://example.com/" rel="nofollow">Запрещенная для индексации поисковиков</a></noindex></li>
+					<li><p>Контекстная <a href="http://example.com/">ссылка</a> в тексте абзаца</p></li>
+					<li>Ссылка-изображение<br/>
+						<a href="http://example.com/"><img src="https://pbs.twimg.com/media/ETpcZHkWAAE6A-s.jpg" height="242" alt="Описание картинки"></a></li>
+					<li>Ссылки из прямоугольных и круглых областей картинки<br/>
+						<img src="https://i.pinimg.com/originals/b5/ba/27/b5ba27d635df94876734d3b87ab103f8.jpg" height="242" alt="Круг и Квадрат" usemap="#mymap">
+							<map name="mymap">
+								<area shape="rect" coords="872,458,518,105" href="http://example.com/" alt="Прямоугольная область">
+								<area shape="circle" coords="252,277,177" href="http://example.com/" alt="Круглая область">
+							</map>
+					</li>
+					<li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+					<li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+					<li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+					<li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+					<li><a href="/">Сокращенная ссылка на главную</a></li>
+					<li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+				</ol>
+
+			<h2 class="head">Таблица</h2>
+			<table id="tabel">
+				<tbody>
+				<tr>
+					<th>Колонка 1</th>
+					<th>Колонка 2</th>
+					<th>Колонка 3</th>
+				</tr>
+
+				<tr class="tdcolor">
+					<td colspan="2">Ячейка 1</td>
+					<td>Ячейка 1</td>
+				</tr>
+
+				<tr>
+					<td colspan="2">Ячейка 2 </td>
+					<td>Ячейка 2 </td>
+				</tr>
+
+				<tr class="tdcolor">
+					<td>Ячейка 3</td>
+					<td>Ячейка 3</td>
+					<td>Ячейка 3</td>
+				</tr>
+
+				<tr>
+					<td colspan="3">Ячейка 4</td>
+				</tr>
+
+				<tr class="tdcolor">
+					<td>Ячейка 5</td>
+					<td>Ячейка 5</td>
+					<td>Ячейка 5</td>
+				</tr>
+
+				</tbody>
+			</table>
+			<br/>
+				
+				<h2 class="head">Форма</h2>
+				<form id="form" action="http://example.com" method="POST">
+					Имя:<br/>
+					<label>
+						<input name="name">
+					</label><br/>
+					
+					e-mail:<br/>				
+					<label>
+						<input name="email"
+						type="email"/>
+					</label><br/>
+					
+					Дата рождения:<br/>				
+					<label>
+						<input name="date"
+						type="date"/>
+					</label><br/>
+				
+					Пол:<br/>
+					<label>
+						<input type="radio" name="radio2" value="1"/>
+						м
+					</label>
+				
+					<label>
+						<input type="radio" name="radio2" value="2"/>
+						ж
+					</label><br/>
+				
+					Количество конечностей:<br/>
+					<label>
+						<input type="radio" name="radio1" value="1"/>
+						1
+					</label>
+					
+					<label>
+						<input type="radio" name="radio1" value="2"/>
+						2
+					</label>
+	
+					<label>
+						<input type="radio" name="radio1" value="3"/>
+						3
+					</label>
+				
+					<label>
+						<input type="radio" name="radio1" value="4"/>
+						4
+					</label><br/>
+				
+					<label>
+						Сверхспособности:<br/>
+						<select name="p" multiple="multiple">
+						<option value="immortality" selected="selected">бессмертие</option>
+						<option value="passingthroughwalls">прохождение сквозь стены</option>
+						<option value="levitation">левитация</option>
+						</select>
+					</label><br/>
+				
+					<label>
+						Биография:<br/>
+						<textarea name="biofraphy">...</textarea>
+					</label><br/>
+					
+						С контрактом ознакомлен(а):<br/>
+					<label>
+						<input type="checkbox" checked="checked" name="check"/>
+					</label><br/>
+				
+						<input type="submit" value="Отправить"/>
+				</form>
+				</div>
+
+
+				<div id="footer"><p>© Захаров Кирилл 2021</p></div>
+    </body>
+
+</html>
